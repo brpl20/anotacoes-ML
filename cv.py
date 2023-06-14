@@ -34,10 +34,10 @@ y24 = int((box4['Top'] + box4['Height']) * height)
 #y = int(points['y'])
 #w = int(points['width'])
 #h = int(points['height'])
-#retangle = cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2) # 3x4 (online)
-retangle = cv2.rectangle(img, (x14, y14), (x24, y24), color, thickness)
+cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2) # 3x4 (online)
+cv2.rectangle(img, (x14, y14), (x24, y24), color, thickness)
 
-cv2.imshow('imagem_com_retant', retangle)
+cv2.imshow('imagem_com_retant', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
